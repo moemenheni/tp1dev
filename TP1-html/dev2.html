@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercice 2 - Formulaire</title>
+
+    
+</head>
+
+<body>
+
+    <div class="formulaire">
+
+        <form>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                pattern="[a-zA-Z0-9._%+-]+@epi\.com\.tn"
+                title="L'email doit se terminer par @epi.com.tn"
+            >
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+                pattern="(?=.*[0-9]).{6,8}"
+                title="Le mot de passe doit contenir entre 6 et 8 caractères avec au moins un chiffre"
+            >
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
